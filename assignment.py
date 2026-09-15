@@ -23,13 +23,14 @@ def find_student_by_id(records, student_id):
 # Exercise 3
 def binary_search_steps(data, target):
     # Write your code here
-    answer=[-1,1]
+    answer=[-1,0]
     low = 0
     high = len(data) - 1
     while low <= high:
         mid = (low + high) // 2
         if data[mid] == target:
             answer[0]=mid
+            answer[1]+=1
             return answer  # found
         elif data[mid] < target:
             low = mid + 1
@@ -38,7 +39,6 @@ def binary_search_steps(data, target):
         answer[1]=answer[1]+1
     return answer
     pass
-
 # Exercise 4
 def find_insert_position(data, value):
     # Write your code here
