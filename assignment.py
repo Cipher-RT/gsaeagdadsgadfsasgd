@@ -49,9 +49,8 @@ def find_insert_position(data, value):
             continue
         elif values==value:
             return index
-        else:
-            return index
         index+=1
+    return index
     pass
 
 # Exercise 5
