@@ -3,10 +3,11 @@
 
 def find_all_positions(data, target):
     #def linear_search(data, target):
+    a=[]
     for i in range(len(data)):
         if data[i] == target:
-            return i+1
-    return 
+            a.append(i+1)
+    return a
     pass
 
 
