@@ -6,7 +6,7 @@ def find_all_positions(data, target):
     a=[]
     for i in range(len(data)):
         if data[i] == target:
-            a.append(i+1)
+            a.append(i)
     return a
     pass
 
