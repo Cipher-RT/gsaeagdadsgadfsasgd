@@ -51,6 +51,8 @@ def find_insert_position(data, target):
             low = mid + 1
         else:
             high = mid
+    if data[len(data)-1]<target:
+        low+=1
     return low
 
 # Exercise 5
