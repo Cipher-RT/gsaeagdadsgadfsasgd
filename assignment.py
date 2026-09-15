@@ -14,6 +14,10 @@ def find_all_positions(data, target):
 # Exercise 2
 def find_student_by_id(records, student_id):
     # Write your code here
+    for student in records:
+        if student[0]==student_id:
+            return student[1]
+    return
     pass
 
 # Exercise 3
