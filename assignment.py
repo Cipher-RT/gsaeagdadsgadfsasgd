@@ -2,8 +2,13 @@
 # Exercise 1
 
 def find_all_positions(data, target):
-    # Write your code here
+    #def linear_search(data, target):
+    for i in range(len(data)):
+        if data[i] == target:
+            return i+1
+    return 
     pass
+
 
 # Exercise 2
 def find_student_by_id(records, student_id):
