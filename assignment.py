@@ -42,6 +42,16 @@ def binary_search_steps(data, target):
 # Exercise 4
 def find_insert_position(data, value):
     # Write your code here
+    index=0
+    for values in data:
+        if values<value:
+            index += 1
+            continue
+        elif values==value:
+            return index
+        else:
+            return index
+        index+=1
     pass
 
 # Exercise 5
